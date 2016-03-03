@@ -1,0 +1,48 @@
+20:29:07 **** Incremental Build of configuration Debug for project HW2_207 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:80:67: warning: cast to 'void *' from smaller integer type 'int' [-Wint-to-void-pointer-cast]
+        if(pthread_create(&th, &ta, (void * (*) (void *))TCPechod,(void *)ssock) < 0)
+                                                                  ^
+../main.c:103:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while(cc=read(fd, buf, sizeof buf))
+          ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:103:13: note: place parentheses around the assignment to silence this warning
+    while(cc=read(fd, buf, sizeof buf))
+            ^
+          (                           )
+../main.c:103:13: note: use '==' to turn this assignment into an equality comparison
+    while(cc=read(fd, buf, sizeof buf))
+            ^
+            ==
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: HW2_207
+Invoking: MacOS X C Linker
+gcc  -o "HW2_207"  ./main.o   
+Undefined symbols for architecture x86_64:
+  "_errexit", referenced from:
+      _main in main.o
+      _TCPechod in main.o
+  "_passiveTCP", referenced from:
+      _main in main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [HW2_207] Error 1
+20:33:22 **** Incremental Build of configuration Debug for project HW2_207 ****
+make all 
+Building target: HW2_207
+Invoking: MacOS X C Linker
+gcc  -stdlib=libstdc++  -o "HW2_207"  ./main.o   
+Undefined symbols for architecture x86_64:
+  "_errexit", referenced from:
+      _main in main.o
+      _TCPechod in main.o
+  "_passiveTCP", referenced from:
+      _main in main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [HW2_207] Error 1

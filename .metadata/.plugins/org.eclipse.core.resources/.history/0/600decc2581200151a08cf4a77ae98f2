@@ -1,0 +1,219 @@
+/*
+ * HW2.cpp
+ *
+ *  Created on: Jun 13, 2015
+ *      Author: lokisneha
+ */
+#include<iostream>
+#include<math.h>
+#include <fstream>
+
+using namespace std;
+
+void exercise1();
+void exercise2();
+void exercise3();
+
+int main(){
+
+	//exercise1();
+	//exercise2();
+	exercise3();
+	return 0;
+}
+
+void exercise1()
+{
+	char ch,array1[100];
+	int size=0,i;
+	cin>>ch;
+	while(ch!='.')
+	{
+		array1[size]=ch;
+		size++;
+		cin>>ch;
+	}
+	for(i=size-1;i>=0;i--)
+	{
+		cout<<array1[i];
+	}
+
+}
+
+void exercise2()
+{
+	double value[2][8], overall;
+	int i,j;
+	string filename;
+
+	//take the HW Assignment and Lab exam scores of the student:
+	cout <<"Please enter five HW Assignments scores [0 – 100]: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>value[0][i];
+	}
+	cout <<"Please enter five Lab Exam scores [0 – 100]: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>value[1][i];
+	}
+
+
+	//best score value[x][5], worst score value[x][6] and avarage score value[x][7] calculation:
+	value[0][5]=value[0][0];
+	value[0][6]=value[0][0];
+	value[0][7]=value[0][0];
+	value[1][5]=value[1][0];
+	value[1][6]=value[1][0];
+	value[1][7]=value[1][0];
+	for(i=0;i<2;i++)
+	{
+		for(j=1;j<5;j++)
+		{
+			if(value[i][5]<value[i][j]) //best score
+			{
+				value[i][5]=value[i][j];
+			}
+			if(value[i][6]>value[i][j]) //worst score
+			{
+				value[i][6]=value[i][j];
+			}
+			value[i][7]+=value[i][j]; //total score
+		}
+		value[i][7]=value[i][7]/5; //average score
+
+	}
+	overall=(value[0][7]+value[1][7])/2; // overall average of HW and exam scores
+
+
+	cout<<"  \t1\t2\t3\t4\t5 \n";
+	cout<<"\t************************************\n";
+	cout<<"HW\t"<<value[0][0]<<"\t"<<value[0][1]<<"\t"<<value[0][2]<<"\t"<<value[0][3]<<"\t"<<value[0][4]<<"\t"<<"BEST HW: "<<value[0][5]<<"  WORST HW: "<<value[0][6]<<"  average HW: "<<value[0][7]<<"\n";
+	cout<<"LAB\t"<<value[1][0]<<"\t"<<value[1][1]<<"\t"<<value[1][2]<<"\t"<<value[1][3]<<"\t"<<value[1][4]<<"\t"<<"BEST HW: "<<value[1][5]<<"  WORST HW: "<<value[1][6]<<"  average HW: "<<value[1][7]<<"\n\n";
+	cout<<"AVG\t"<<(value[0][0]+value[1][0])/2<<"\t"<<(value[0][1]+value[1][1])/2<<"\t"<<(value[0][2]+value[1][2])/2<<"\t"<<(value[0][3]+value[1][3])/2<<"\t"<<(value[0][4]+value[1][4])/2<<"\t"<<"Overall: "<<overall<<"\n\n";
+
+	if(value[0][7]>50 && value[1][7]>50)
+	{
+	cout<<" Congratulations! You passed the class! \n";
+	}
+	else if(value[0][7]<50)
+	{
+	cout<<"I’m sorry to inform you that you failed the class, because your performance in HW Assignment was <50%. Try again next semester. \n";
+	}
+	else
+	{
+	cout<<"I’m sorry to inform you that you failed the class, because your performance in the Lab Exam was <50%. Try again next semester. \n";
+	}
+
+	//write the output to the file :
+	cout<<"enter the file name to write the output in to file \n";
+	cin>>filename;
+	ofstream myfile(filename);
+	  if (myfile.is_open())
+	  {
+	    myfile<<"  \t1\t2\t3\t4\t5 \n";
+	    myfile<<"\t************************************\n";
+	    myfile<<"HW\t"<<value[0][0]<<"\t"<<value[0][1]<<"\t"<<value[0][2]<<"\t"<<value[0][3]<<"\t"<<value[0][4]<<"\t"<<"BEST HW: "<<value[0][5]<<"  WORST HW: "<<value[0][6]<<"  average HW: "<<value[0][7]<<"\n";
+	    myfile<<"LAB\t"<<value[1][0]<<"\t"<<value[1][1]<<"\t"<<value[1][2]<<"\t"<<value[1][3]<<"\t"<<value[1][4]<<"\t"<<"BEST HW: "<<value[1][5]<<"  WORST HW: "<<value[1][6]<<"  average HW: "<<value[1][7]<<"\n\n";
+	    myfile<<"AVG\t"<<(value[0][0]+value[1][0])/2<<"\t"<<(value[0][1]+value[1][1])/2<<"\t"<<(value[0][2]+value[1][2])/2<<"\t"<<(value[0][3]+value[1][3])/2<<"\t"<<(value[0][4]+value[1][4])/2<<"\t"<<"Overall: "<<overall<<"\n\n";
+	    if(value[0][7]>50 && value[1][7]>50)
+	    	{
+	    	myfile<<" Congratulations! You passed the class! \n";
+	    	}
+	    	else if(value[0][7]<50)
+	    	{
+	    	myfile<<"I’m sorry to inform you that you failed the class, because your performance in HW Assignment was <50%. Try again next semester. \n";
+	    	}
+	    	else
+	    	{
+	    	myfile<<"I’m sorry to inform you that you failed the class, because your performance in the Lab Exam was <50%. Try again next semester. \n";
+	    	}
+	    cout<<"Output Successfully written to the file! \n";
+	    myfile.close();
+	  }
+	  else cout<< "Unable to open file";
+
+}
+
+
+void exercise3()
+{
+	int array[50],option,size,i,j,n=0,max,temp,count=1,k;
+	string filename;
+
+	cout<<"To enter the elements of array from console select 1/ from file select 2 \n";
+	cin>>option;
+	if(option==1) // reads integers from console in to the array
+	{
+		cout<<"enter the size of an array less than 50 \n";
+		cin>>size;
+		cout<<"enter the elements of array \n";
+		for(i=0;i<size;i++)
+		{
+			cin>>array[i];
+		}
+	}
+	else // reads integers from file in to array.
+	{
+		cout<<"enter the file name to read integers in to an array \n";
+		cin>>filename;
+		ifstream myfile;
+		myfile.open(filename);
+		if(myfile.is_open())
+		{
+			while(!myfile.eof())
+			{
+				myfile>>array[n];
+				n++;
+			}
+			size=n;
+			cout<<"done \n";
+		}
+		else cout<< "Unable to open file";
+	}
+
+	//sort the array in the descending order
+	for(i=0;i<size;i++)
+	{
+		max=i;
+		for(j=i+1;j<size;j++)
+		{
+			if(array[j]>array[max])
+				max=j;
+		}
+		if(max!=i)
+		{
+		temp=array[i];
+		array[i]=array[max];
+		array[max]=temp;
+		}
+	}
+
+	cout<<"sorted array : \n";
+	for(i=0;i<size;i++)
+	{
+		cout<<array[i]<<"\t";
+	}
+	//printing output to the console
+	cout<<"\n\tN\tCount\n";
+	for(i=0;i<size;i++)
+	{
+		i=i+count-1;
+		cout<<"\t"<<array[i]<<"\t";
+		count=1;
+		for(j=i+1;j<size;j++)
+		{
+			if(array[i]==array[j])
+			{
+			count++;
+			}
+		}
+		cout<<count<<"\n";
+	}
+
+}
+
+
+
+
+

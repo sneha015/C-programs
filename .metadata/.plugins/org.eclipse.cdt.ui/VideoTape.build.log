@@ -1,0 +1,26 @@
+12:50:31 **** Build of configuration Debug for project VideoTape ****
+make all 
+Building file: ../Video.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Video.d" -MT"Video.d" -o "Video.o" "../Video.cpp"
+../Video.cpp:142:24: error: 'Title' is a private member of 'videoType'
+                        cout<<current->info.Title;
+                                            ^
+../Video.cpp:83:9: note: declared private here
+        string Title;
+               ^
+../Video.cpp:154:32: error: expected ';' after expression
+                        cout<<"store does not carry"\n;
+                                                    ^
+                                                    ;
+../Video.cpp:154:32: error: expected expression
+../Video.cpp:164:32: error: expected ';' after expression
+                        cout<<"store does not carry"\n;
+                                                    ^
+                                                    ;
+../Video.cpp:164:32: error: expected expression
+5 errors generated.
+make: *** [Video.o] Error 1
+
+12:50:32 Build Finished (took 416ms)
+

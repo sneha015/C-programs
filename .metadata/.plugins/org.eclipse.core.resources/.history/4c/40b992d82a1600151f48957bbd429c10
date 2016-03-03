@@ -1,0 +1,58 @@
+/*
+ * HW3.cpp
+ *
+ *  Created on: Jun 18, 2015
+ *      Author: lokisneha
+ */
+#include<iostream>
+#include<ctype.h>
+#include<fstream>
+#include<string>
+
+
+using namespace std;
+
+void exercise1();
+//void exercise2();
+//void exercise3();
+
+
+int main()
+{
+	exercise1();
+	//exercise2();
+	//exercise3();
+	return 0;
+}
+
+void exercise1()
+{
+	string text="5 He is good !!",word="\0",numb="5";
+	int i;
+
+	cout<<" "<<text.size();
+	i=0;
+
+		while(i<=text.size())
+	    {
+			word.clear();
+			while(text[i]!= ' ')
+		    {
+				if(isdigit(text[i]))
+				{
+					cout<<text[i];
+					i++;
+				}
+				else
+				{
+					word=word+text[i];
+				i++;
+			}
+		    }
+
+			i++;
+			cout<<word;
+	    }
+}
+
+

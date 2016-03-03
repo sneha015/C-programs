@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;sudoku_validator/case1.txt&apos; to &apos;r.txt&apos;" description="Rename resource &apos;case1.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="case1.txt" name="r.txt" stamp="1443551692724" updateReferences="true"/>
+</session>

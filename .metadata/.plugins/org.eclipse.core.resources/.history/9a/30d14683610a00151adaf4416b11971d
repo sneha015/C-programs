@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std;
+
+void exercise1(){
+
+	cout<<"A fool thinks himself to be wise, but a wise man knows himself to be a fool.";
+}
+
+void exercise2(){
+	int x;
+	cin>>x;
+	cout<<x * x;
+}
+
+
+int main(){
+
+	//exercise1();
+	exercise2();
+}

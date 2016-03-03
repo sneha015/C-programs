@@ -1,0 +1,15 @@
+22:24:21 **** Incremental Build of configuration Debug for project HW6_Exercise1 ****
+make all 
+Building file: ../HW6_Exercise1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HW6_Exercise1.d" -MT"HW6_Exercise1.d" -o "HW6_Exercise1.o" "../HW6_Exercise1.cpp"
+Finished building: ../HW6_Exercise1.cpp
+ 
+Building target: HW6_Exercise1
+Invoking: MacOS X C++ Linker
+g++  -o "HW6_Exercise1"  ./HW6_Exercise1.o   
+Finished building target: HW6_Exercise1
+ 
+
+22:24:21 Build Finished (took 469ms)
+

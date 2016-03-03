@@ -1,0 +1,15 @@
+10:44:02 **** Incremental Build of configuration Debug for project HW5 ****
+make all 
+Building file: ../HW5.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HW5.d" -MT"HW5.d" -o "HW5.o" "../HW5.cpp"
+Finished building: ../HW5.cpp
+ 
+Building target: HW5
+Invoking: MacOS X C++ Linker
+g++  -o "HW5"  ./HW5.o   
+Finished building target: HW5
+ 
+
+10:44:03 Build Finished (took 472ms)
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1444525642458_2" label="oldHomeWorks" name="oldHomeWorks">
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/BinTree" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Dialog_box" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW1" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW2" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW3" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW4" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW5_MergeList" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW5_doublyLinkedList" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW6_DecToBin" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW6_Exercise1" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW6_Palindrome" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW7" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW7_HashTable" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW7_MoveNthFront" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/HW7_RecursiveBinarySearch" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/InsertionSort" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/QuickSort" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/SelectionSort" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/VideoTape" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/back" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/chartest" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/knightsTour" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/mergeSort" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/nQueens" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/newtest" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/postfix" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/prime" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/recurssion" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/sudoku" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/sudoku_validator" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/stock" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1433376589159_0" label="Window Working Set" name="Aggregate for window 1433376589158"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1433389469043_1" label="Window Working Set" name="Aggregate for window 1433389469043"/>
+<mruList name="oldHomeWorks"/>
+</workingSetManager>

@@ -1,0 +1,179 @@
+/*
+ * HW3.cpp
+ *
+ *  Created on: Jun 18, 2015
+ *      Author: lokisneha
+ */
+#include<iostream>
+#include<ctype.h>
+#include<fstream>
+#include<string>
+#include<sstream>
+
+
+using namespace std;
+
+//void exercise1();
+//void exercise2();
+//void exercise3();
+//void example();
+void example2();
+
+int main()
+{
+	//exercise1();
+	//exercise2();
+	//exercise3();
+	//example();
+	example2();
+	return 0;
+}
+
+
+void example()
+{
+  string str ("There are two needles in this haystack with needles.");
+  string str2 ("needle"), str2replace("iron");
+  size_t found=0;
+
+  cout << str << '\n';
+  while((found = str.find(str2, found)) != string::npos)
+  {
+       str.replace(found, str2.length(), str2replace);
+       found += str2replace.length();
+  }
+  cout << str << '\n';
+}
+
+void example2()
+{
+    string str("He is good person, his works are incredible. It was his honesty people appreciates.");
+    string buf; // Have a buffer string
+    stringstream ss(str); // Insert the string into a stream
+
+    //vector<string> tokens; // Create vector to hold our words
+
+    while (ss >> buf)
+    {
+        //tokens.push_back(buf);
+        if(buf=="He" || "She")
+        {
+        	cout<<"She or he";
+        	ss=ss>>buf;
+        	ss=ss>>buf;
+
+        }
+        else if(buf=="he" || "she")
+        	{
+        		cout<<"she or he";
+        		ss=ss>>buf;
+        		ss=ss>>buf;
+        	}
+        else if(buf=="his" || "her")
+            {
+            	cout<<"her(s) or his";
+            }
+        else if(buf=="His" || "Her")
+            {
+                cout<<"Her(s) or his";
+            }
+        else if(buf=="him" || "her")
+            {
+                cout<<"her or him";
+            }
+        else if(buf=="Him" || "Her")
+            {
+                cout<<"Her or him";
+            }
+        else
+        {
+        	cout<<buf;
+        }
+        cout<<" ";
+
+    }
+
+
+}
+
+/*void exercise1()
+{
+	string text("He is good !!"),word,red="sneha",blue,re;
+	int i=0,k,j,count=0,wsize;
+
+	cout<<text<<text.size()<<"\n"<<text.at(0);
+	for(i=0;i<red.size();i++)
+	{
+		blue=red[i];
+	}
+	if(red.compare(blue)==0)
+					{
+						cout<<"she or he";
+					}
+
+k=0;
+	if(!isdigit(text[0]))
+	{
+	while(count<text.size() && text[k]!=' ')
+	{
+		if(text[k]=='H')
+		{
+			k++;
+			count++;
+			if(text[k]=='e')
+			{
+				cout<<"She or He";
+			}else if(text[k]=='i')
+			{
+				k++;
+				count++;
+				if(text[k]=='s')
+				{
+					cout<<"His or hers";
+					k++;
+					count++;
+				}
+			}
+		}
+
+
+	}
+
+	}
+	word[0]=' ';
+j=1;
+	for(i=k;i<=text.size();i++)
+	{
+
+		if(isdigit(text[i]))
+		{
+			cout<<text[i];
+		}
+		else
+		{
+			if(text[i]!=' ')
+			{
+			word[j]=text[i];
+			j++;
+			wsize++;
+			}
+
+			if(text[i]==' ')
+			{
+				if(word.compare(0,wsize,"He")==0)
+				{
+					cout<<"she or he";
+				}
+				cout<<" ";
+				word.clear();
+				word[0]=' ';
+				j=0;
+				wsize=0;
+			}
+
+		}
+	}
+
+
+}*/
+

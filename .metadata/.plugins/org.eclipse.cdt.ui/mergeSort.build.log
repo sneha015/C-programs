@@ -1,0 +1,19 @@
+18:29:37 **** Incremental Build of configuration Debug for project mergeSort ****
+make all 
+Building file: ../margeSort.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"margeSort.d" -MT"margeSort.d" -o "margeSort.o" "../margeSort.cpp"
+In file included from ../margeSort.cpp:3:
+../arrayListType.h:483:1: error: expected expression
+template <class elemType>
+^
+../margeSort.cpp:48:1: error: expected '}'
+^
+../arrayListType.h:458:1: note: to match this '{'
+{
+^
+2 errors generated.
+make: *** [margeSort.o] Error 1
+
+18:29:38 Build Finished (took 366ms)
+

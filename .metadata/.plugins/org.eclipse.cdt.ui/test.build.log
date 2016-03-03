@@ -1,0 +1,172 @@
+12:50:32 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../Trial.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Trial.d" -MT"Trial.d" -o "Trial.o" "../Trial.cpp"
+../Trial.cpp:101:49: error: non-member function cannot have 'const' qualifier
+  bool operator()(stockType& s1, stockType& s2) const
+                                                ^~~~~
+../Trial.cpp:101:8: error: overloaded 'operator()' must be a non-static member function
+  bool operator()(stockType& s1, stockType& s2) const
+       ^
+../Trial.cpp:103:10: error: invalid use of 'this' outside of a non-static member function
+      if(this == GAIN)
+         ^
+In file included from ../Trial.cpp:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:439:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3779:17: error: called object type 'int' is not a function or function pointer
+            if (__comp(*--__last, *__first))
+                ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+In file included from ../Trial.cpp:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:439:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3826:14: error: called object type 'int' is not a function or function pointer
+        if (!__comp(*__i, *__m))  // if *__first == *__m
+             ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3894:24: error: called object type 'int' is not a function or function pointer
+                while (__comp(*__i, *__m))
+                       ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3897:25: error: called object type 'int' is not a function or function pointer
+                while (!__comp(*--__j, *__m))
+                        ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3911:27: error: called object type 'int' is not a function or function pointer
+        if (__i != __m && __comp(*__m, *__i))
+                          ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3529:10: error: called object type 'int' is not a function or function pointer
+    if (!__c(*__y, *__x))          // if x <= y
+         ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3783:20: note: in instantiation of function template specialization 'std::__1::__sort3<int &, stockType *>' requested here
+            _VSTD::__sort3<_Compare>(__first, __first+1, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+In file included from ../Trial.cpp:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:439:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3543:9: error: called object type 'int' is not a function or function pointer
+    if (__c(*__z, *__y))           // x > y, if y > z
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3551:9: error: called object type 'int' is not a function or function pointer
+    if (__c(*__z, *__y))           // if y > z
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3566:20: error: no matching function for call to '__sort3'
+    unsigned __r = __sort3<_Compare>(__x1, __x2, __x3, __c);
+                   ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3786:20: note: in instantiation of function template specialization 'std::__1::__sort4<int &, stockType *>' requested here
+            _VSTD::__sort4<_Compare>(__first, __first+1, __first+2, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3526:1: note: candidate template ignored: substitution failure [with _Compare = int &, _ForwardIterator = stockType *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3567:9: error: called object type 'int' is not a function or function pointer
+    if (__c(*__x4, *__x3))
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3592:20: error: no matching function for call to '__sort4'
+    unsigned __r = __sort4<_Compare>(__x1, __x2, __x3, __x4, __c);
+                   ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3789:20: note: in instantiation of function template specialization 'std::__1::__sort5<int &, stockType *>' requested here
+            _VSTD::__sort5<_Compare>(__first, __first+1, __first+2, __first+3, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3563:1: note: candidate template ignored: substitution failure [with _Compare = int &, _ForwardIterator = stockType *]
+__sort4(_ForwardIterator __x1, _ForwardIterator __x2, _ForwardIterator __x3,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3593:9: error: called object type 'int' is not a function or function pointer
+    if (__c(*__x5, *__x4))
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3657:5: error: no matching function for call to '__sort3'
+    __sort3<_Compare>(__first, __first+1, __j, __comp);
+    ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3794:20: note: in instantiation of function template specialization 'std::__1::__insertion_sort_3<int &, stockType *>' requested here
+            _VSTD::__insertion_sort_3<_Compare>(__first, __last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3526:1: note: candidate template ignored: substitution failure [with _Compare = int &, _ForwardIterator = stockType *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3660:13: error: called object type 'int' is not a function or function pointer
+        if (__comp(*__i, *__j))
+            ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3686:13: error: called object type 'int' is not a function or function pointer
+        if (__comp(*--__last, *__first))
+            ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3920:32: note: in instantiation of function template specialization 'std::__1::__insertion_sort_incomplete<int &, stockType *>' requested here
+            bool __fs = _VSTD::__insertion_sort_incomplete<_Compare>(__first, __i, __comp);
+                               ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3965:5: note: in instantiation of function template specialization 'std::__1::__sort<int &, stockType *>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3999:12: note: in instantiation of function template specialization 'std::__1::sort<stockType *, int &>' requested here
+    _VSTD::sort<_Tp*, _Comp_ref>(__first.base(), __last.base(), __comp);
+           ^
+../Trial.cpp:127:2: note: in instantiation of function template specialization 'std::__1::sort<stockType, int>' requested here
+        sort(stockList.begin(),stockList.end(),SYMBOL);
+        ^
+In file included from ../Trial.cpp:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:439:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3690:9: error: no matching function for call to '__sort3'
+        _VSTD::__sort3<_Compare>(__first, __first+1, --__last, __comp);
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config:347:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_NAMESPACE
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:3526:1: note: candidate template ignored: substitution failure [with _Compare = int &, _ForwardIterator = stockType *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [Trial.o] Error 1
+
+12:50:33 Build Finished (took 518ms)
+

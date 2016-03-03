@@ -1,0 +1,47 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int arr[10]={ 5, 24,-1,9,72,2,-4,6,10,36};
+
+	for(int k=0; k<10; k++)
+	{
+		cout<<arr[k]<<" ";
+	}
+	cout<<"\n";
+
+	for(int i=0; i<10; i++)
+	{
+		int small = i;
+		for(int j=i; j<10; j++)
+		{
+			if(arr[j]< arr[small])
+				small = j;
+		}
+
+		if(small != i)
+		{
+			int temp =arr[i];
+			arr[i]= arr[small];
+			arr[small]=temp;
+		}
+	}
+
+	for(int k=0; k<10; k++)
+		{
+			cout<<arr[k]<<" ";
+		}
+		cout<<"\n";
+
+
+
+
+
+return 0;
+
+}
+
+
+

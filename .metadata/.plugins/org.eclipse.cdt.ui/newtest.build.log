@@ -1,0 +1,15 @@
+12:50:32 **** Build of configuration Debug for project newtest ****
+make all 
+Building file: ../array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"array.d" -MT"array.d" -o "array.o" "../array.cpp"
+Finished building: ../array.cpp
+ 
+Building target: newtest
+Invoking: MacOS X C++ Linker
+g++  -o "newtest"  ./array.o   
+Finished building target: newtest
+ 
+
+12:50:32 Build Finished (took 521ms)
+

@@ -1,0 +1,1 @@
+MSG.d: ../MSG.cpp

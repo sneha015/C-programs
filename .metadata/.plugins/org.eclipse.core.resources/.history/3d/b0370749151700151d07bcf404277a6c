@@ -1,0 +1,112 @@
+/*
+ * HW3.cpp
+ *
+ *  Created on: Jun 18, 2015
+ *      Author: lokisneha
+ */
+#include<iostream>
+#include<ctype.h>
+#include<fstream>
+#include<string>
+#include<sstream>
+#include<vector>
+
+
+using namespace std;
+
+//void exercise1();
+void exercise2();
+//void exercise3();
+vector<string> split(string target, string delimiter);
+
+
+int main()
+{
+	//exercise1();
+	exercise2();
+	//exercise3();
+	return 0;
+}
+
+
+void exercise1()
+{
+	string input;
+    string word;
+    int option=1;
+
+    while(true)
+    {
+    	if(option==2){
+    		break;
+    	}
+    cout<<"Enter a sentence to modify !! \n";
+
+    getline(cin,input);
+    stringstream ss(input);
+
+    while (ss>>word)
+    {
+        if(word=="He" || word=="She")
+        {
+        	cout<<"She or he";
+        }
+        else if(word=="he" || word=="she")
+        	{
+        	cout<<"she or he";
+        	}
+        else if(word=="his" || word=="her")
+            {
+            	cout<<"her(s) or his";
+            }
+        else if(word=="His" || word=="Her")
+            {
+                cout<<"Her(s) or his";
+            }
+        else if(word=="him" || word=="her")
+            {
+                cout<<"her or him";
+            }
+        else if(word=="Him" || word=="Her")
+            {
+                cout<<"Her or him";
+            }
+        else
+        {
+        	cout<<word;
+        }
+        cout<<" ";
+    }
+
+    input.clear();
+    cout<<"\nDo u want to enter one more sentence ? type \"1\" for yes and \"2\" for no \n";
+    cin>>option;
+    cin.ignore();
+    }
+
+}
+
+
+
+void exercise2()
+{
+  string str = "one two three four";
+  vector<string> sep = split(str,' ');
+
+  for(int i = 0; i < sep.size(); ++i)
+    cout << sep[i] <<"\n";
+}
+
+vector<string> split(string target, string delimiter) {
+  vector<string> internal;
+  stringstream ss(target); // Turn the string into a stream.
+  string tok;
+
+  while(getline(ss, tok, delimiter)) {
+    internal.push_back(tok);
+  }
+
+  return internal;
+}
+
+

@@ -1,0 +1,6 @@
+12:26:26 **** Incremental Build of configuration Debug for project SelectionSort ****
+make all 
+make: Nothing to be done for `all'.
+
+12:26:26 Build Finished (took 68ms)
+

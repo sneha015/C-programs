@@ -1,0 +1,8 @@
+  	1	2	3	4	5 
+	************************************
+HW	35	25	50	30	40	BEST HW: 50  WORST HW: 25  average HW: 36
+LAB	80	60	70	55	65	BEST HW: 80  WORST HW: 55  average HW: 66
+
+AVG	57.5	42.5	60	42.5	52.5	Overall: 51
+
+I’m sorry to inform you that you failed the class, because your performance in HW Assignment was <50%. Try again next semester. 

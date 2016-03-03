@@ -1,0 +1,82 @@
+#include<iostream>
+#include<string>
+#include<ctype.h>
+
+using namespace std;
+
+class prefix
+{
+public:
+	prefix(string& str);
+	//constructor
+	void getInfix(string& str);
+	//Stores the infix expression
+	void showInfix();
+	//Outputs the infix expression
+	void showPostfix();
+	//Outputs the postfix expression
+	bool convertToPostfix();
+	//Converts the infix expression into a postfix expression.
+	//The resulting postfix expression is stored in pfx.
+	bool precedence(char sym1, char sym2);
+	//Determines the precedence between two operators.
+	//If the first operator is of higher or equal precedence than the second operator,
+	//it returns the value true; otherwise, it returns the value false.
+private:
+	string infix;
+	string postfix;
+};
+
+prefix::prefix(string& str)
+{
+	infix = str;
+}
+void prefix::getInfix(string& str)
+{
+	str = infix;
+}
+void prefix::showInfix()
+{
+	cout<<infix;
+}
+void prefix::showPostfix()
+{
+	cout<<postfix;
+}
+bool postfix::precedence(char sym1, char sym2)
+{
+	int s1,s2;
+	if(sym1 == '*' || sym1 == '/')
+	{
+		s1=2;
+	}else
+	if(sym1 == '+' || sym1 == '-')
+	{
+		s1=1;
+	}
+	if(sym2 == '*' || sym2 == '/')
+	{
+		s2=2;
+	}else
+	if(sym1 == '+' || sym1 == '-')
+	{
+		s2=1;
+	}
+
+	if(s1>=s2)
+		return true;
+	else
+		return false;
+}
+
+bool postfix::convertToPostfix()
+{
+	string str;
+	str = infix;
+
+	for(int i=0; i< str.length() ; i++)
+}
+
+
+
+

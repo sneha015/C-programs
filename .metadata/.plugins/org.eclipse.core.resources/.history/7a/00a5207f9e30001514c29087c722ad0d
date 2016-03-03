@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+class prefix
+{
+public:
+	void getInfix(string& str);
+	//Stores the infix expression
+	void showInfix();
+	//Outputs the infix expression
+	void showPostfix();
+	//Outputs the postfix expression
+	bool convertToPostfix();
+	//Converts the infix expression into a postfix expression.
+	//The resulting postfix expression is stored in pfx.
+	bool precedence(char sym1, char sym2);
+	//Determines the precedence between two operators.
+	//If the first operator is of higher or equal precedence than the second operator,
+	//it returns the value true; otherwise, it returns the value false.
+private:
+	string infix;
+
+};

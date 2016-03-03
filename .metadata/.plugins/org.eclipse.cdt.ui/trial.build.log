@@ -1,0 +1,15 @@
+23:13:16 **** Incremental Build of configuration Debug for project trial ****
+make all 
+Building file: ../trial.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"trial.d" -MT"trial.d" -o "trial.o" "../trial.cpp"
+Finished building: ../trial.cpp
+ 
+Building target: trial
+Invoking: MacOS X C++ Linker
+g++  -o "trial"  ./trial.o   
+Finished building target: trial
+ 
+
+23:13:17 Build Finished (took 481ms)
+

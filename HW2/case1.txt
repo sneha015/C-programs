@@ -1,0 +1,8 @@
+  	1	2	3	4	5 
+	************************************
+HW	100	90	70	40	68	BEST HW: 100  WORST HW: 40  average HW: 73.6
+LAB	35	90	70	85	55	BEST HW: 90  WORST HW: 35  average HW: 67
+
+AVG	67.5	90	70	62.5	61.5	Overall: 70.3
+
+ Congratulations! You passed the class! 

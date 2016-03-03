@@ -1,0 +1,99 @@
+/*
+ * HW2.cpp
+ *
+ *  Created on: Jun 13, 2015
+ *      Author: lokisneha
+ */
+#include<iostream>
+#include<math.h>
+
+
+using namespace std;
+
+void exercise1(); //reads a string and prints it in reverse order.
+void exercise2(); //outputs square of an integer
+//void exercise3(); //calls overloaded functions to add different type arguments
+
+
+int main(){
+
+	//exercise1();
+	exercise2();
+	//exercise3();
+	return 0;
+}
+
+void exercise1()
+{
+	char ch,array1[100];
+	int size=0,i;
+	cin>>ch;
+	while(ch!='.')
+	{
+		array1[size]=ch;
+		size++;
+		cin>>ch;
+	}
+	for(i=size-1;i>=0;i--)
+	{
+		cout<<array1[i];
+	}
+
+}
+
+void exercise2()
+{
+	double value[2][8], overall;
+	int i,j;
+
+	//take the HW Assignment and Lab exam scores of the student:
+	cout <<"Please enter five HW Assignments scores [0 – 100]: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>value[0][i];
+	}
+	cout <<"Please enter five Lab Exam scores [0 – 100]: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>value[1][i];
+	}
+
+
+	//best score value[x][5], worst score value[x][6] and avarage score value[x][7] calculation:
+	value[0][5]=value[0][0];
+	value[0][6]=value[0][0];
+	value[0][7]=value[0][0];
+	value[1][5]=value[1][0];
+	value[1][6]=value[1][0];
+	value[1][7]=value[1][0];
+	for(i=0;i<2;i++)
+	{
+		for(j=1;j<5;j++)
+		{
+			if(value[i][5]<value[i][j]) //best score
+			{
+				value[i][5]=value[i][j];
+			}
+			if(value[i][6]>value[i][j]) //worst score
+			{
+				value[i][6]=value[i][j];
+			}
+			value[i][7]+=value[i][j]; //average value
+		}
+
+	}
+	overall=(value[0][7]+value[1][7])/2; // overall average of HW and exam scores
+
+
+	cout<<"  \t1\t2\t3\t4\t5 \n";
+	cout<<"\t************************************\n";
+	cout<<"HW\t"<<value[0][0]<<"\t"<<value[0][1]<<"\t"<<value[0][2]<<"\t"<<value[0][3]<<"\t"<<value[0][4]<<"\t"<<"BEST HW: "<<value[0][5]<<"  WORST HW: "<<value[0][6]<<"  average HW: "<<value[0][7]<<"\n";
+	cout<<"LAB\t"<<value[1][0]<<"\t"<<value[1][1]<<"\t"<<value[1][2]<<"\t"<<value[1][3]<<"\t"<<value[1][4]<<"\t"<<"BEST HW: "<<value[1][5]<<"  WORST HW: "<<value[1][6]<<"  average HW: "<<value[1][7]<<"\n\n";
+	cout<<"AVG\t"<<(value[0][0]+value[1][0])/2<<"\t"<<(value[0][1]+value[1][1])/2<<"\t"<<(value[0][2]+value[1][2])/2<<"\t"<<(value[0][3]+value[1][3])/2<<"\t"<<(value[0][4]+value[1][4])/2<<"\t"<<"Overall: "<<overall<<"\n";
+
+}
+
+
+
+
+

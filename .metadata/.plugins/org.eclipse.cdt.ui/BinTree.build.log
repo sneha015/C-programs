@@ -1,0 +1,6 @@
+18:08:25 **** Incremental Build of configuration Debug for project BinTree ****
+make all 
+make: Nothing to be done for `all'.
+
+18:08:25 Build Finished (took 121ms)
+

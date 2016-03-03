@@ -1,0 +1,103 @@
+#include<iostream>
+
+using namespace std;
+
+void exercise1(){
+
+	cout<<"A fool thinks himself to be wise, but a wise man knows himself to be a fool.";
+}
+
+void exercise2(){
+	int x;
+	cout<<"enter a number\n";
+	cin>>x;
+	cout<<x * x;
+}
+
+void exercise3()
+{
+	cout<<"1. add two integers\n";
+	cout<<"2. add two double\n";
+	cout<<"3. add two character arrays\n";
+	cout<"enter option(1-3)\n";
+	int option;
+	cin>>option;
+	switch (option)
+	{
+	case 1:
+	    {
+		int num1,num2;
+		cout<<"Enter two integer numbers\n";
+		cin>>num1>>num2;
+		add(num1,num2);
+	    }
+	    break;
+	case 2:
+	    {
+		double num1,num2;
+	    cout<<"Enter two floating point numbers\n";
+		cin>>num1>>num2;
+		add(num1,num2);
+	    }
+	    break;
+	case 3:
+	    {
+		char array1[10],array2[10];
+		int size1,size2,i,j;
+		cout<<"Enter the size of the array1 less than 11\n";
+		cin>>size1;
+		cout<<"Enter the elements of 1st character array\n";
+		for(i=0;i<size1;i++)
+		{
+			cin>>array1[i];
+		}
+		cout<<"Enter the size of the array2 less than 11\n";
+		cin>>size2;
+		cout<<"Enter the elements of 2nd character array\n";
+		for(j=0;i<size2;j++)
+		{
+		cin>>array2[j];
+		}
+		add(array1[],array2[]);
+	    }
+	    break;
+	default : cout<<"Invalid option!! \n";
+	}
+
+}
+
+voidadd(char array1[],char array2[])
+{
+	int size1,size2,i,j;
+	size1=sizeof(array1[]);
+	size2=sizeof(array2[]);
+	for(i=0;i<size1;i++)
+	{
+	cout<<array1[i];
+	}
+	for(j=0;i<size2;j++)
+	{
+	cout<<array2[j]<<"\n";
+	}
+}
+
+void add(int number1,int number2)
+{
+	int sum;
+	sum=number1+number2;
+	cout<<sum;
+}
+
+void add(double number1,double number2)
+{
+	double sum;
+	sum=number1+number2;
+	cout<<sum;
+}
+
+int main(){
+
+	//exercise1();
+	//exercise2();
+	exercise3();
+}

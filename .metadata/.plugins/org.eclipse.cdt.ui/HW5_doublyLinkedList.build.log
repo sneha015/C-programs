@@ -1,0 +1,15 @@
+14:55:00 **** Incremental Build of configuration Debug for project HW5_doublyLinkedList ****
+make all 
+Building file: ../HW5_DoublyLList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HW5_DoublyLList.d" -MT"HW5_DoublyLList.d" -o "HW5_DoublyLList.o" "../HW5_DoublyLList.cpp"
+Finished building: ../HW5_DoublyLList.cpp
+ 
+Building target: HW5_doublyLinkedList
+Invoking: MacOS X C++ Linker
+g++  -o "HW5_doublyLinkedList"  ./HW5_DoublyLList.o   
+Finished building target: HW5_doublyLinkedList
+ 
+
+14:55:01 Build Finished (took 486ms)
+

@@ -1,0 +1,14 @@
+#include<iostream>
+
+using namespace std;
+
+void exercise1(){
+
+	cout<<"A fool thinks himself to be wise, but a wise man knows himself to be a fool.";
+}
+
+
+int main(){
+
+	excercise1();
+}

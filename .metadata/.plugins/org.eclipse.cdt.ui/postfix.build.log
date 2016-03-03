@@ -1,0 +1,15 @@
+18:25:29 **** Incremental Build of configuration Debug for project postfix ****
+make all 
+Building file: ../postfix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"postfix.d" -MT"postfix.d" -o "postfix.o" "../postfix.cpp"
+Finished building: ../postfix.cpp
+ 
+Building target: postfix
+Invoking: MacOS X C++ Linker
+g++  -o "postfix"  ./postfix.o   
+Finished building target: postfix
+ 
+
+18:25:30 Build Finished (took 617ms)
+

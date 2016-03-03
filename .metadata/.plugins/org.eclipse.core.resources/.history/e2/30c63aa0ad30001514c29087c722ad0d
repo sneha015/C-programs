@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+#include"infixToPostfix.h"
+
+using namespace std;
+
+int main()
+{
+	string str;
+	str="A + B";
+	postfix ITP(str);
+	ITP.showInfix();
+	ITP.showPostfix();
+
+	return 0;
+}
+
+
+

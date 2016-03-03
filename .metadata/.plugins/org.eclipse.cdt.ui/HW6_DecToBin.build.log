@@ -1,0 +1,15 @@
+00:22:32 **** Incremental Build of configuration Debug for project HW6_DecToBin ****
+make all 
+Building file: ../HW6_DecToBin.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HW6_DecToBin.d" -MT"HW6_DecToBin.d" -o "HW6_DecToBin.o" "../HW6_DecToBin.cpp"
+Finished building: ../HW6_DecToBin.cpp
+ 
+Building target: HW6_DecToBin
+Invoking: MacOS X C++ Linker
+g++  -o "HW6_DecToBin"  ./HW6_DecToBin.o   
+Finished building target: HW6_DecToBin
+ 
+
+00:22:36 Build Finished (took 3s.627ms)
+
